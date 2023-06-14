@@ -1,0 +1,66 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"apk"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "build:apk",
+			"detail": "flutter build apk"
+		},
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"web"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "build:web",
+			"detail": "flutter build web"
+		},
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"winuwp"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "build:winuwp",
+			"detail": "flutter build winuwp"
+		},
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"windows"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "build:windows",
+			"detail": "flutter build windows"
+		},
+		{
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"dependsOn": [
+				"build:apk",
+				"build:web",
+				"build:windows"
+			],
+			"label": "build:all",
+			"problemMatcher": []
+		}
+	]
+}

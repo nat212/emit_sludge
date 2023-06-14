@@ -1,0 +1,38 @@
+name: emit_sludge
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/image/selch.png"
+  adaptive_icon_background: "#EEEEEE"
+  adaptive_icon_foreground: "assets/image/selch.png"
+  web:
+    generate: true
+    image_path: "assets/image/selch.png"
+    background_color: "#EEEEEE"
+  windows:
+    generate: true
+    image_path: "assets/image/selch.png"
+    icon_size: 256
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/text/e-words.txt
+    - assets/text/s-words.txt
